@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="primary-header flex">
+        <div>
+            <img class="logo" src="./images/logo.svg" alt="">
+        </div>
+        <button class="nav-button mobile-nav-toggle" aria-controls="primary-navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="primary-navigation flex" data-visible="false" aria-expanded="false">
+            <ul class="flex upper">
+                <div class="nav-item" data-dropdown>
+                    <a href="#" class="nav__link_active" data-dropdown-button>Features <img class="arrow one" src="./images/icon-arrow-up.svg" alt=""></a>
+                    <div class="drop-list">
+                        <a href="#"><img src="./images/icon-todo.svg" alt="">Todo List</a>
+                        <a href="#"><img src="./images/icon-calendar.svg" alt="">Calendar</a>
+                        <a href="#"><img src="./images/icon-reminders.svg" alt="">Reminders</a>
+                        <a href="#"><img src="./images/icon-planning.svg" alt="">Planning</a>
+                    </div>
+                </div>
+                <div class="nav-item" data-dropdown>
+                    <a href="#" class="nav__link_active" data-dropdown-button>Company <img class="arrow two" src="./images/icon-arrow-up.svg" alt=""></a>
+                    <div class="drop-list">
+                        <a href="#">History</a>
+                        <a href="#">Our Team</a>
+                        <a href="#">Blog</a>
+                    </div>
+                </div>
+                <div class="nav-item"><a href="#">Careers</a></div>
+                <div class="nav-item"><a href="#">About</a></div>
+            </ul>
+            <ul class="flex">
+                <div class="nav-item">
+                    <a href="#" class="nav__link">Login</a>
+                </div>
+                <div class="nav-item">
+                    <a href="#" class="nav__link nav__link--button">Register</a>
+                </div>
+            </ul>
+        </nav>
+        <div class="overlay" aria-expanded="false"></div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="intro">
+                <h1 class="title">Make <br>
+                    remote work</h1>
+                <p>Get your team in sync, no matter your location. Streamline processes,
+                    create team rituals, and watch productivity soar.</p>
+                <a href="#" class="nav__link btn">Learn more</a>
+                <div class="labels">
+                    <img src="./images/client-databiz.svg" alt="">
+                    <img src="./images/client-audiophile.svg" alt="">
+                    <img src="./images/client-meet.svg" alt="">
+                    <img src="./images/client-maker.svg" alt="">
+                </div>
+            </div>
+            <div class="picture">
+                <img src="./images/image-hero-desktop.png" alt="">
+            </div>
+        </section>
+    </main>
+    <script defer src="script.js"></script>
+</body>
+
+</html>
